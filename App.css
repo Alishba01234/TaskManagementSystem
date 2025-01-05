@@ -1,0 +1,322 @@
+/* TaskList Styling */
+.task-list-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.progress-bar-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.5s ease;
+}
+
+.progress-text {
+  font-size: 14px;
+  color: #555;
+}
+
+.task-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.task-filters input,
+.task-filters select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.task-item h3 {
+  margin: 0;
+  color: #333;
+}
+
+.task-item p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.task-item button {
+  margin-right: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-item button:first-of-type {
+  background-color: #2196f3;
+  color: white;
+}
+
+.task-item button:last-of-type {
+  background-color: #f44336;
+  color: white;
+}
+
+.task-item button:hover {
+  opacity: 0.9;
+}
+/* App.css */
+
+/* General Reset */
+body, h1, h2, h3, p, ul, li, button, input, textarea, select {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #f7f8fc, #e0e7ff);
+  color: #333;
+  padding: 20px;
+}
+
+/* Main Container */
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* Input Form */
+div input, div textarea, div select, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #09c6df;
+  color: black;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #04a4b9;
+}
+
+.view-tasks-button {
+  background-color: #1fd828;
+}
+
+.view-tasks-button:hover {
+  background-color: #04b80d;
+}
+
+/* Task List */
+h2 {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #555;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+li p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+li button {
+  width: auto;
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+/* Login Page Styling */
+
+/* Wrapper */
+#login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #09c6df, #1fd828); /* Light blue to light green */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Container */
+#login-container {
+  width: 400px;
+  padding: 40px;
+  background: rgb(31, 30, 30);
+  border-radius: 10px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Title and Subtitle */
+#login-title {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+#login-subtitle {
+  font-size: 14px;
+  color: wheat;
+  margin-bottom: 20px;
+}
+
+/* Input Group */
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-label {
+  font-size: 12px;
+  color: wheat;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  border: 2px solid #1fd828;
+  /* border-color: #1fd828; Light green */
+}
+
+/* Error Text */
+#error-text {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Button */
+#login-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(to right, #09c6df, #1fd828); /* Light blue to light green */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#login-button:hover {
+  background: linear-gradient(to right, #04a4b9, #04b80d); /* Slightly darker shades */
+}
+
+.logout-container {
+  display: flex;
+  justify-content: center;  /* Center the button horizontally */
+  width: 100%;
+  margin-top: 20px; /* Add space above the button */
+}
+
+/* Logout button styling */
+.logout-button {
+  width: 20%; /* Set width to 20% */
+  padding: 12px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.logout-button:hover {
+  background-color: #e53935;
+}
