@@ -106,8 +106,8 @@ function TaskList() {
             <p>{task.description}</p>
             <p>Due Date: {formatDate(task.due_date)}</p>
             <p>Status: {task.status}</p>
-            <button onClick={() => handleEditTask(task)}>Edit</button>
-            <button onClick={() => handleDeleteTask(task.id)}>Delete</button>
+            <button className="action-button edit" onClick={() => handleEditTask(task)}>Edit</button>
+            <button className="action-button delete" onClick={() => handleDeleteTask(task.id)}>Delete</button>
           </li>
         ))}
       </ul>
